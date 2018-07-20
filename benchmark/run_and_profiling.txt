@@ -6,7 +6,7 @@ python tf_cnn_benchmarks.py --device=cpu --batch_size=32 --model=resnet50 --vari
 
 	
 
-profiling
+profiling with perf is too coarse grained -- cannot find the code through the functions' names...
 -------------------
 
 
@@ -18,6 +18,11 @@ stackcollapse-perf.pl perf.unfold &> perf.folded
 
 flamegraph.pl perf.folded > cpu_batch_size=32_model=resnet50_variable_update=parameter_server_data_format=NHWC.svg
 
+
+
+using tensorflow's perf tools
+--------------
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/profiler/README.md
 
 
 On GPU
