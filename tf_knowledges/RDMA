@@ -1,0 +1,23 @@
+
+RDMA - Direct memory access (DMA) is an ability of a device to access host memory directly, without the intervention of the CPU(s). 
+ 
+ there are several network protocols which support RDMA: 
+ 
+Infiniband - a new generation network protocol which supports RDMA natively from the beginning. Since this is a new network technology, it requires NICs and switches which supports this technology. 
+ 
+RoCE - RoCE protocols define how to perform RDMA using Ethernet and UDP/IP frames 
+ 
+IWARP -  iWARP protocol defines how to perform RDMA over a connection-oriented transport like the Transmission Control Protocol (TCP) 
+ 
+ 
+https://en.wikipedia.org/wiki/RDMA_over_Converged_Ethernet 
+http://www.rdmamojo.com/2014/03/31/remote-direct-memory-access-rdma/ 
+https://community.mellanox.com/docs/DOC-1963 
+https://www.openfabrics.org/images/eventpresos/workshops2013/IBUG/2013_UserDay_Thur_1400_Bob-Russell-programming-concepts.pdf 
+ 
+https://www.csm.ornl.gov/workshops/openshmem2014/documents/presentations_and_tutorials/Tutorials/Verbs%20programming%20tutorial-final.pdf 
+ 
+ 
+RoCE defines how to perform RDMA over Ethernet while the InfiniBand architecture specification defines how to perform RDMA over an InfiniBand network. RoCE was expected to bring InfiniBand applications, which are predominantly based on clusters, onto a common Ethernet converged fabric. 
+ 
+ 
